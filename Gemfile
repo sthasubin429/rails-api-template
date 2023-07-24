@@ -7,8 +7,13 @@ gem "bootsnap", require: false
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.6"
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
+gem "devise", "~> 4.9"
+gem "devise-jwt", "~> 0.11.0"
+gem "rack-cors", "~> 2.0"
+
+gem 'active_model_serializers'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
@@ -23,9 +28,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem "rack-cors"
 
 group :development, :test do
   gem "byebug"

@@ -1,3 +1,5 @@
-class UserSerializer < ActiveModel::Serializer
-  attributes :uuid, :email, :created_at, :updated_at
+class UserSerializer
+  include JSONAPI::Serializer
+  set_id :uuid
+  attributes :email
 end

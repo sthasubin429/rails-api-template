@@ -11,10 +11,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def register_success
-    render json: {
-      message: "Signed up sucessfully.",
-      user: current_user
-    }, status: :ok
+    render json: {message: "Signed up successfully."}.merge(UserSerializer.new(current_user)), status: :ok
   end
 
   def register_failed

@@ -13,6 +13,7 @@ gem "devise", "~> 4.9"
 gem "devise-jwt", "~> 0.11.0"
 gem "rack-cors", "~> 2.0"
 
+# Json Searializer
 gem 'jsonapi-serializer'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -31,7 +32,13 @@ gem 'jsonapi-serializer'
 
 group :development, :test do
   gem "byebug"
+  gem 'database_cleaner-active_record'
   gem "debug", platforms: %i[mri mingw x64_mingw]
+  gem "factory_bot_rails", "~> 6.2"
+  gem 'faker' # [https://github.com/faker-ruby/faker]
+  gem 'rspec-rails', '~> 6.0.3'
+  gem "simplecov", require: false
+  gem "webmock", "~> 3.18", ">= 3.18.1" # [https://github.com/bblimke/webmock]
 end
 
 group :development do

@@ -1,7 +1,6 @@
 require "simplecov"
 require "devise"
 require "webmock/rspec"
-require "database_cleaner/active_record"
 
 SimpleCov.start "rails"
 

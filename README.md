@@ -1,24 +1,18 @@
-# README
+# Rails API Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Template for rails api only application
 
-Things you may want to cover:
+# Versions
 
-* Ruby version
+```
+ruby 3.2.2
+rails ~> 7.0.6
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## This Template includes
+- Authentication using Devise Gem
+- Model Serializer using jsonapi-serializer
+- Rspec for unit test
+- Database setup using postgres
+- Dockerized App
+- Rubocop, CodeClimate and pre-commit setup

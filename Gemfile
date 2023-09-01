@@ -17,6 +17,11 @@ gem "rack-cors", "~> 2.0"
 
 # Json Searializer
 gem 'jsonapi-serializer'
+
+# Background jobs
+gem "sidekiq", "~> 7.0.7"
+gem "sidekiq-scheduler", "~> 5.0"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 

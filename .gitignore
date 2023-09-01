@@ -46,9 +46,3 @@
 .env.dev
 .env.test
 .env
-
-/config/credentials/development.key
-
-/config/credentials/staging.key
-
-/config/credentials/developent.key
